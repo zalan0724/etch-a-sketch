@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    background: linear-gradient(-45deg, #061556, #450887, #0c227f, #590fa3);
+    background-size: 400% 400%;
+    background-attachment: fixed;
+    animation: gradient 15s ease infinite;
+    overflow: hidden;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#sketchBox{
+    width: 512px;
+    height: 512px;
+    border: 1px solid black;
+    display: inline-block;
+    line-height: normal;
+    box-sizing: content-box;
+    line-height: 0px;
+}
+.pixel{
+    display: inline-block;
+    border: 1px solid black;
+    box-sizing: border-box;
+    position: relative;
+}
