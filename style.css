@@ -4,6 +4,22 @@
     box-sizing: border-box;
 
 }
+a:link{
+    color:white;
+    font-family: inherit;
+}
+a:visited{
+    color:white;
+    font-family: inherit;
+}
+a:hover{
+    color:white;
+    font-family: inherit;
+}
+a:active{
+    color:white;
+    font-family: inherit;
+}
 body{
     text-align: left;
     font-family: 'Helvetica', 'Arial', sans-serif;
@@ -117,5 +133,10 @@ body{
     transition-duration: 0.2s;
 }
 
-
+#source{
+    position: absolute;
+    color: white;
+    bottom:0px;
+    left: 10px;
+}
 
