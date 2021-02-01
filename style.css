@@ -5,12 +5,14 @@
 
 }
 body{
+    text-align: left;
     font-family: 'Helvetica', 'Arial', sans-serif;
     background: linear-gradient(-45deg, #061556, #450887, #0c227f, #590fa3);
     background-size: 400% 400%;
     background-attachment: fixed;
     animation: gradient 15s ease infinite;
     overflow: hidden;
+    min-width: 864px;
 }
 @keyframes gradient {
 	0% {
@@ -23,19 +25,97 @@ body{
 		background-position: 0% 50%;
 	}
 }
+#container{
+    position: relative;
+    width: 100vw;
+    height: 600px;
+    border: 0px solid black;
+    box-sizing: border-box;
+    display: inline-block;
+    top:50vh;
+    transform: translateY(-50%);
+}
+#settingsBorder{
+    position: absolute;
+    width: 350px;
+    height: 600px;
+    box-sizing: border-box;
+    display: inline-block;
+    left:50px;
+    border-left:5px solid black;
+    background-color: rgba(0,0,0,0.2);
+}
+#settings{
+    position: relative;
+    box-sizing: content-box;
+    color: white;
+    font-size: 25px;
+}
+.settingElement{
+    margin-top: 20px;
+    display: block;
+    position: relative;
+    left: 10px;
+}
+#drawingToggle{
+    color:red;
+}
+.button{
+    width: 120px;
+    height: 50px;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 4px solid #061556;
+    transition-duration: 0.3s;
+    outline: none;
+}
+.button:hover{
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 0px rgba(255, 255, 255, 0.9);
+    font-weight: bold;
+    color:black;
+    border-radius: 4px;
+}
 
+#sizeSettingRow{
+    border: 0px solid black;
+}
+
+#pixelSlider{
+    width:140px;
+}
+
+#sketchBoxBorder{
+    position: absolute;
+    display: inline-block;
+    border: 4px solid black;
+    border-radius: 24px;
+    background-color: white;
+    left:500px;
+    top: 50%;
+    transform: translateY(-50%);
+}
 #sketchBox{
     width: 512px;
     height: 512px;
-    border: 1px solid black;
-    display: inline-block;
-    line-height: normal;
-    box-sizing: content-box;
-    line-height: 0px;
+    border: 20px solid rgba(148, 148, 148, 0.3);
+    border-radius: 20px;
+    display: grid;
+    box-sizing:content-box;
+    position: relative;
+
+
 }
 .pixel{
     display: inline-block;
-    border: 1px solid black;
+    border: 0px solid black;
     box-sizing: border-box;
     position: relative;
+    transition-duration: 0.2s;
 }
+
+
+
